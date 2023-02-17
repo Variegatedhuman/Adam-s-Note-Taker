@@ -20,6 +20,18 @@ The goal of this project was to connect the front end and back end of a Note Tak
 ## Instructions
 
 In order to access this application go to our version that is deployed on [Heroku](https://adams-note-taker2001.herokuapp.com/)
+
+To use the application click on "Get Started"
+
+From there input a note header and body
+
+When finished click the floppy disk icon in the top right to save
+
+To add a new note click the plus icon in the top right
+
+To delete a note click the adjacent trash can icon
+
+To go back to the start menu click "Note Taker" in the top left
     
 ## Screenshot
 
