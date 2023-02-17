@@ -23,9 +23,9 @@ In order to access this application go to our version that is deployed on [Herok
     
 ## Screenshot
 
-![Screenshot1](assets/notetaker1.png)
+![Screenshot1](public/assets/notetaker1.png)
 
-![Screenshot2](assets/pngnotetaker1.png)
+![Screenshot2](public/assets/notetaker2.png)
 
 ## Usage
     
