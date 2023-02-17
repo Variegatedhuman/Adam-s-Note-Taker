@@ -22,25 +22,26 @@ router.post("/notes", (req, res) => {
         res.status(200).json(saveNotes)
 });
 
-// function deleteNote(id, saveNotes) {
-//     for (let i = 0; i < saveNotes.length; i++) {
-//         let note = saveNotes[i];
+function deleteNote(id, saveNotes) {
+    for (let i = 0; i < saveNotes.length; i++) {
+        let note = saveNotes[i];
 
-//         if (note.id == id) {
-//             saveNotes.splice(i, 1);
-//             fs.writeFileSync(
-//                 path.join(__dirname, '../db/db.json'),
-//                 JSON.stringify(saveNotes, null, 2)
-//             );
+        if (note.id == id) {
+            saveNotes.splice(i, 1);
+            fs.writeFileSync(
+                path.join(__dirname, '../db/db.json'),
+                JSON.stringify(saveNotes, null, 2)
+            );
 
-//             break;
-//         }
-//     }
-// }
+            break;
+        }
+    }
+}
 
-// router.delete('/api/notes/:id', (req, res) => {
-//     deleteNote(req.params.id, saveNotes);
-//     res.json(true);
-// });
+router.delete('/notes/:id', (req, res) => {
+    const saveNotes = db;
+    deleteNote(req.params.id, saveNotes);
+    res.json(true);
+});
 
 module.exports = router;
